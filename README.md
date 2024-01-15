@@ -14,7 +14,7 @@ He personalizado el proyecto creando un tutorial para aprender Python al cual he
 
 -Selectores dinámicos de secciones de navbar en función de la selección realizada
 
-A continuación muestro la página web en pantallas grandes y pequeñas:
+A continuación muestro la página web en pantallas pequeñas en las cuales se puede visualizar el menú hamburguesa:
 
 # Pantallas Pequeñas
 
