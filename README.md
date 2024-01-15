@@ -18,4 +18,4 @@ A continuación muestro la página web en pantallas pequeñas en las cuales se p
 
 # Pantallas Pequeñas
 
-![Layout en pantallas pequeñas](./assets/img/screenshots/small_screen.png)
+![Layout en pantallas pequeñas](./assets/img/screenshots/small-screen.png)
