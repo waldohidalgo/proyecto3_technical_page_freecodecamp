@@ -3,6 +3,7 @@ header {
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 @font-face {
@@ -83,6 +84,10 @@ Estilo del Scroll Boton
   text-align: start;
   code {
     font-family: montserrat, monospace;
+  }
+  font-size: 0.8rem;
+  @media screen and (min-width: 925px) {
+    font-size: 1rem;
   }
 }
 
