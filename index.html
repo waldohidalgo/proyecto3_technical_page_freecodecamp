@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/python-logo.png"
+      type="image/x-icon"
+    />
+    <title>Python Tutorial</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Python Tutorial</h1>
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="show_nav_def">
+          <li title="Ir a sección Introducción">
+            <a href="#Introduccion" class="nav-link">Introducción</a>
+          </li>
+          <li title="Ir a sección Variables y Operadores">
+            <a href="#Variables_y_Operadores" class="nav-link"
+              >Variables y Operadores</a
+            >
+          </li>
+          <li title="Ir a sección Estructuras de Datos">
+            <a href="#Estructuras_de_Datos" class="nav-link"
+              >Estructuras de Datos</a
+            >
+          </li>
+          <li title="Ir a sección Control de Flujo">
+            <a href="#Control_de_Flujo" class="nav-link">Control de Flujo</a>
+          </li>
+          <li title="Ir a sección Funciones">
+            <a href="#Funciones" class="nav-link">Funciones</a>
+          </li>
+          <li title="Ir a sección Programación Orientada a Objetos">
+            <a href="#Programacion_Orientada_a_Objetos_(POO)" class="nav-link"
+              >Programación Orientada a Objetos</a
+            >
+          </li>
+          <li title="Ir a sección Decoradores">
+            <a href="#Decoradores" class="nav-link">Decoradores</a>
+          </li>
+          <li title="Ir a sección Iteradores y Generadores">
+            <a href="#Iteradores_y_Generadores" class="nav-link"
+              >Iteradores y Generadores</a
+            >
+          </li>
+          <li title="Ir a sección Módules y Paquetes">
+            <a href="#Modulos_y_Paquetes" class="nav-link"
+              >Módulos y Paquetes</a
+            >
+          </li>
+          <li title="Ir a sección Manejo de Excepciones">
+            <a href="#Manejo_de_Excepciones" class="nav-link"
+              >Manejo de Excepciones</a
+            >
+          </li>
+          <li title="Ir a sección Expresiones Regulares">
+            <a href="#Expresiones_Regulares" class="nav-link"
+              >Expresiones Regulares</a
+            >
+          </li>
+          <li title="Ir a sección Manipulación de Archivos">
+            <a href="#Manipulacion_de_Archivos" class="nav-link"
+              >Manipulación de Archivos</a
+            >
+          </li>
+          <li title="Ir a sección Trabajo Con API Rest">
+            <a href="#Trabajo_con_API_REST" class="nav-link"
+              >Trabajo con API REST</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="layout">
+      <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+          <header>
+            <h2>
+              Introducción
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Python es un lenguaje de alto nivel cercano al lenguaje natural,
+              interpretado, multiplataforma, scripting y de propósito general.
+              Precisamente, es su cercania con el lenguaje natural lo que
+              facilita su aprendizaje. En este tutorial se realiza un recorrido
+              por los principales tópicos de dicho lenguaje.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Variables_y_Operadores">
+          <header>
+            <h2>
+              Variables y Operadores
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Las variables y los operadores son dos conceptos fundamentales en
+              la programación en Python. Las variables se utilizan para
+              almacenar datos, y los operadores se utilizan para realizar
+              operaciones con datos.
+            </p>
+            <h3>Variables</h3>
+            <p>
+              En Python, una variable es un espacio de almacenamiento que tiene
+              un nombre identificador y contiene un valor o referencia a un
+              objeto. Al asignar un valor a una variable, le das un nombre
+              descriptivo que luego puedes utilizar para referenciar y manipular
+              ese valor. La asignación de variables en Python se realiza
+              mediante el operador de asignación =.
+              <br /><br />
+              A continuación muestro un ejemplo:
+            </p>
+            <p class="code_section">
+              <code
+                ># Asignación de variables<br />
+                nombre = "John"<br />
+                edad = 25 <br />
+                altura = 1.75 <br />
+                es_estudiante = True</code
+              >
+            </p>
+
+            <h3>Operadores</h3>
+            <p>
+              Python incluye varios tipos de operadores que permiten realizar
+              operaciones en variables y valores. Aquí hay algunos de los
+              operadores más comunes:
+            </p>
+            <ol>
+              <li>
+                <h4>Operadores Aritméticos</h4>
+                <p>Los operadores aritméticos más comunes son</p>
+                <ul>
+                  <li>Suma: +</li>
+                  <li>Resta: -</li>
+                  <li>Multiplicación: *</li>
+                  <li>División: /</li>
+                  <li>Potenciación: **</li>
+                </ul>
+              </li>
+              <li>
+                <h4>Operadores Lógicos</h4>
+                <p>Los operadores lógicos más comunes son:</p>
+                <ul>
+                  <li>AND: <code>and</code></li>
+                  <li>OR: <code>or</code></li>
+                  <li>NOT: <code>not</code></li>
+                </ul>
+              </li>
+              <li>
+                <h4>Operadores de Comparación</h4>
+                <p>Los operadores de comparación más comunes son:</p>
+                <ul>
+                  <li>Igual: <code>==</code></li>
+                  <li>Distinto: <code>!=</code></li>
+                  <li>Mayor que: <code>&gt;</code></li>
+                  <li>Menor que: <code>&lt;</code></li>
+                  <li>Mayor o igual que: <code>&gt;=</code></li>
+                  <li>Menor o igual que: <code>&lt;=</code></li>
+                </ul>
+              </li>
+              <li>
+                <h4>Operadores de Asignación</h4>
+                <p>Los operadores de asignación más comunes son:</p>
+                <ul>
+                  <li>Suma: <code>+=</code></li>
+                  <li>Resta: <code>-=</code></li>
+                  <li>Multiplicación: <code>*=</code></li>
+                  <li>División: <code>/=</code></li>
+                  <li>Módulo: <code>%=</code></li>
+                  <li>Potenciación: <code>**=</code></li>
+                </ul>
+              </li>
+            </ol>
+          </article>
+        </section>
+        <section class="main-section" id="Estructuras_de_Datos">
+          <header>
+            <h2>
+              Estructuras de Datos
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Las estructuras de datos son contenedores que almacenan datos.
+              Python proporciona una variedad de estructuras de datos, como
+              listas, tuplas, conjuntos y diccionarios.
+            </p>
+            <h3>Listas</h3>
+            <p>
+              Una lista es una estructura de datos que puede almacenar una
+              secuencia de elementos. Los elementos de una lista pueden ser de
+              cualquier tipo de dato, incluidos números, cadenas, objetos y
+              otras listas. Para crear una lista, se usa la corchetes []. Por
+              ejemplo, para crear una lista que almacenará los números 1, 2 y 3,
+              se usaría el siguiente código:
+            </p>
+            <p><code>numeros = [1, 2, 3]</code></p>
+            <h3>Tuplas</h3>
+            <p>
+              Una tupla es una estructura de datos similar a una lista, pero los
+              elementos de una tupla son inmutables. Esto significa que los
+              elementos de una tupla no se pueden modificar una vez que se han
+              asignado. Para crear una tupla, se usa la sintaxis ( y ). Por
+              ejemplo, para crear una tupla que almacenará los números 1, 2 y 3,
+              se usaría el siguiente código:
+            </p>
+            <p><code>numeros = (1, 2, 3)</code></p>
+            <h3>Conjuntos</h3>
+            <p>
+              Un conjunto es una estructura de datos que almacena una colección
+              de elementos únicos. Los elementos de un conjunto no están
+              ordenados y no tienen índices. Para crear un conjunto, se usa la
+              sintaxis {}. Por ejemplo, para crear un conjunto que almacenará
+              los números 1, 2 y 3, se usaría el siguiente código:
+            </p>
+            <p><code>numeros = {1, 2, 3}</code></p>
+            <h3>Diccionarios</h3>
+            <p>
+              Un diccionario es una estructura de datos que permite almacenar y
+              organizar datos de manera eficiente. Se trata de una colección no
+              ordenada de pares clave-valor, donde cada clave debe ser única.
+              Los diccionarios son conocidos también como "mapas" o "tablas
+              hash" en otros lenguajes de programación. Un diccionario en Python
+              se define utilizando llaves {} y tiene la siguiente estructura
+              básica:
+            </p>
+            <p><code>personas = { "Juan": 20, "María": 25 }</code></p>
+          </article>
+        </section>
+        <section class="main-section" id="Control_de_Flujo">
+          <header>
+            <h2>
+              Control de Flujo
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              El control de flujo en Python es el proceso de controlar el orden
+              en que se ejecutan las instrucciones de un programa. Se utiliza
+              para determinar qué instrucciones se ejecutan, cuándo se ejecutan
+              y cuántas veces se ejecutan.
+            </p>
+            <h3>Sentencias condicionales</h3>
+            <p>
+              Las sentencias condicionales se utilizan para controlar el flujo
+              del programa en función de una condición. Las sentencias
+              condicionales más comunes en Python son <code>if</code>,
+              <code>elif</code> y <code>else</code>.
+            </p>
+            <h3>Bucles</h3>
+            <p>
+              Los bucles se utilizan para ejecutar un bloque de instrucciones
+              repetidamente. Los bucles más comunes en Python son
+              <code>while</code>, <code>for</code> y se utiliza la palabra
+              <code>break</code> para interrumpir la ejecución del loop y la
+              palabra clave <code>continue</code> para saltar de la actual
+              iteración a la siguiente.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Funciones">
+          <header>
+            <h2>
+              Funciones
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Una función es un bloque de código reutilizable que se puede
+              llamar desde cualquier parte del programa. Las funciones se
+              utilizan para dividir un programa en tareas más pequeñas y
+              manejables, y para hacer que el código sea más fácil de leer y
+              mantener.
+            </p>
+            <p>
+              Para definir una función en Python, se utiliza la palabra clave
+              <code>def</code> seguida del nombre de la función, los parámetros
+              de entrada y el cuerpo de la función. El cuerpo de la función es
+              un bloque de código que se ejecutará cuando se llame a la función.
+            </p>
+            <p>
+              El siguiente código define una función llamada sum() que suma dos
+              números:
+            </p>
+            <p class="code_section">
+              <code
+                >def sum(a, b):<br />
+                return a + b</code
+              >
+            </p>
+            <p>
+              La misma función anterior se puede crear utilizando una
+              <b>función anónima lambda</b> y asignarla a una variable:
+            </p>
+            <p><code> sum=lambda a, b: a + b </code></p>
+          </article>
+        </section>
+        <section
+          class="main-section"
+          id="Programacion_Orientada_a_Objetos_(POO)"
+        >
+          <header>
+            <h2>
+              Programación Orientada a Objetos (POO)
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              La Programación Orientada a Objetos (POO) es un paradigma de
+              programación que organiza el código en torno a objetos. Los
+              objetos son entidades que contienen datos (llamados atributos) y
+              métodos (funciones que se aplican a una instancia de la clase).
+              Los datos son información que el objeto almacena, y los métodos
+              son acciones que el objeto puede realizar.
+              <br />
+              <br />
+              En Python, la POO se implementa mediante clases. Las clases son
+              plantillas que se utilizan para crear objetos. Las clases definen
+              los datos y los métodos que tendrá un objeto.
+            </p>
+            <p>
+              El siguiente código define una clase llamada <code>Mascota</code>:
+            </p>
+            <p class="code_section">
+              <code>
+                class Mascota:<br />
+                &emsp;&emsp;def __init__(self, nombre, especie):<br />
+                &emsp;&emsp;&emsp;&emsp;self.nombre = nombre<br />
+                &emsp;&emsp;&emsp;&emsp;self.especie = especie<br />
+                <br />
+                &emsp;&emsp;def presentarse(self):<br />
+                &emsp;&emsp;&emsp;&emsp;return f"Soy {self.nombre}, una
+                {self.especie}."<br />
+                <br />
+                mi_mascota = Mascota("Firulais", "perro")<br />
+                print(mi_mascota.presentarse())
+              </code>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Decoradores">
+          <header>
+            <h2>
+              Decoradores
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Los decoradores son funciones que se utilizan para modificar el
+              comportamiento de otras funciones. Los decoradores se pueden
+              utilizar para agregar funcionalidad, realizar comprobaciones de
+              seguridad o registrar información sobre la ejecución de una
+              función.
+            </p>
+
+            <p>Los decoradores se definen usando la sintaxis siguiente:</p>
+            <p class="code_section">
+              <code>
+                @decorador_funcion <br />
+                def funcion_a_decorar(): <br />
+                &emsp;&emsp;pass
+              </code>
+            </p>
+            <br />
+            <p>
+              En esta sintaxis, <code>decorador_funcion</code> es la función
+              decoradora, y <code>funcion_a_decorar </code> es la función que se
+              va a decorar. La función decoradora se ejecuta antes de que se
+              ejecute la función a decorar. La función decoradora puede devolver
+              la función a decorar, o puede devolver una función completamente
+              nueva.
+            </p>
+            <p class="code_section">
+              <code>
+                def imprimir_nombre_funcion(funcion):<br />
+                &emsp;&emsp;def wrapper(*args, **kwargs):<br />
+                &emsp;&emsp;&emsp;&emsp;print(funcion.__name__)<br />
+                &emsp;&emsp;&emsp;&emsp;return funcion(*args, **kwargs)<br />
+                &emsp;&emsp;return wrapper
+              </code>
+            </p>
+            <br />
+            <p>Este decorador se puede utilizar de la siguiente manera:</p>
+            <p class="code_section">
+              <code>
+                @imprimir_nombre_funcion<br />
+                def saludar(nombre):<br />
+                &emsp;&emsp;print("Hola, {}!".format(nombre))
+              </code>
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Iteradores_y_Generadores">
+          <header>
+            <h2>
+              Iteradores y Generadores
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Los iteradores y generadores son conceptos relacionados que
+              permiten trabajar eficientemente con secuencias de datos,
+              especialmente cuando se trata de conjuntos de datos grandes o
+              cuando queremos generar valores sobre la marcha sin almacenarlos
+              todos en la memoria.
+            </p>
+            <h3>Iteradores:</h3>
+            <p>
+              Un iterador es un objeto que implementa los métodos
+              <code>__iter__()</code> y <code>__next__()</code>. El método
+              <code>__iter__()</code> devuelve el propio objeto iterador, y el
+              método <code>__next__()</code> proporciona el siguiente elemento
+              de la secuencia.
+              <br />
+              El siguiente es un ejemplo de uso:
+            </p>
+            <p class="code_section">
+              <code>
+                class Contador:<br />
+                &emsp;&emsp;def __init__(self, limite):<br />
+                &emsp;&emsp;&emsp;&emsp;self.limite = limite<br />
+                &emsp;&emsp;&emsp;&emsp;self.valor_actual = 0<br />
+                <br />
+                &emsp;&emsp;def __iter__(self):<br />
+                &emsp;&emsp;&emsp;&emsp;return self<br />
+                <br />
+                &emsp;&emsp;def __next__(self):<br />
+                &emsp;&emsp;&emsp;&emsp;if self.valor_actual &lt;
+                self.limite:<br />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;resultado =
+                self.valor_actual<br />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;self.valor_actual += 1<br />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;return resultado<br />
+                &emsp;&emsp;&emsp;&emsp;else:<br />
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;raise StopIteration<br />
+                <br />
+                # Uso del iterador
+                <br />
+                contador_iterador = Contador(5) <br />
+                for numero in contador_iterador:<br />
+                &emsp;&emsp;print(numero)
+              </code>
+            </p>
+            <h3>Generadores:</h3>
+            <p>
+              Los generadores son una forma más sencilla y cómoda de crear
+              iteradores. Se definen mediante funciones que contienen la palabra
+              clave <strong>yield</strong>. Cuando se llama al generador, la
+              ejecución se pausa en la instrucción <strong>yield</strong>, y el
+              valor se devuelve al llamante. La próxima vez que se llama al
+              generador, la ejecución se reanuda justo después del
+              <strong>yield</strong>, manteniendo el estado interno.
+              <br />
+              <br />
+              El siguiente es un ejemplo de uso:
+            </p>
+            <p class="code_section">
+              <code>
+                def generador_pares(n): <br />
+                &emsp;&emsp;for i in range(0, n, 2):<br />
+                &emsp;&emsp;&emsp;&emsp;yield i <br />
+                # Uso del generador
+                <br />
+                for num in generador_pares(6):<br />
+                &emsp;&emsp;print(num)
+              </code>
+            </p>
+            <br />
+            <p>
+              En este ejemplo, el generador
+              <strong>generador_pares</strong> produce números pares hasta el
+              límite n. Cada vez que se itera sobre el generador, la ejecución
+              se pausa en el <code>yield</code> y se reanuda cuando se solicita
+              el siguiente valor.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Modulos_y_Paquetes">
+          <header>
+            <h2>
+              Módulos y Paquetes
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Los módulos y paquetes son mecanismos que permiten organizar y
+              estructurar el código de manera más eficiente, facilitando la
+              reutilización y el mantenimiento del código.
+            </p>
+            <h3>Módulos:</h3>
+            <p>
+              Un módulo en Python es simplemente un archivo que contiene código
+              Python, ya sea funciones, clases o variables. Un módulo puede ser
+              importado en otro script o programa, permitiendo así la
+              reutilización de código.
+              <br /><br />
+              Ejemplo de Módulo:
+              <br /><br />
+              Supongamos que tenemos un archivo llamado
+              <strong>operaciones.py</strong> con el siguiente contenido:
+            </p>
+            <p class="code_section">
+              <code>
+                # operaciones.py<br />
+
+                def suma(a, b):<br />
+                &emsp;&emsp;&emsp;&emsp; return a + b<br />
+
+                def resta(a, b):<br />
+                &emsp;&emsp;&emsp;&emsp; return a - b<br />
+              </code>
+            </p>
+            <p>
+              Este archivo se puede considerar un módulo. Para usar las
+              funciones definidas en este módulo en otro archivo, simplemente lo
+              importamos:
+            </p>
+            <p class="code_section">
+              <code>
+                # otro_script.py
+                <br />
+                import operaciones
+                <br />
+                resultado_suma = operaciones.suma(5, 3)<br />
+                resultado_resta = operaciones.resta(10, 4)<br />
+                <br />
+                print("Suma:", resultado_suma)<br />
+                print("Resta:", resultado_resta)
+              </code>
+            </p>
+            <h3>Paquetes</h3>
+            <p>
+              Un paquete en Python es una forma de organizar múltiples módulos
+              relacionados en un directorio. Un paquete debe contener un archivo
+              especial llamado <strong>__init__.py</strong> para que Python lo
+              reconozca como un paquete. <br /><br />
+              Ejemplo de Paquete:<br /><br />
+              Supongamos que tenemos una estructura de directorios como esta:
+            </p>
+            <p class="code_section">
+              <code>
+                mi_paquete/<br />
+                |-- __init__.py<br />
+                |-- operaciones/<br />
+                |-|-- __init__.py<br />
+                |-|-- suma.py<br />
+                |-|-- resta.py<br />
+                |-- otro_script.py
+              </code>
+            </p>
+            <p>
+              Los archivos <strong>suma.py</strong> y
+              <strong>resta.py</strong> contienen las funciones de mi_suma y
+              mi_resta, respectivamente. El contenido de
+              <strong>__init__.py</strong> (tanto en mi_paquete como en
+              operaciones) puede ser un archivo vacío o contener código que se
+              ejecuta cuando el paquete o módulo se importa.
+            </p>
+            <p class="code_section">
+              <code>
+                # otro_script.py
+                <br />
+                from mi_paquete.operaciones import suma, resta
+                <br /><br />
+                resultado_suma = suma.mi_suma(5, 3)<br />
+                resultado_resta = resta.mi_resta(10, 4)<br />
+                <br />
+                print("Suma:", resultado_suma)<br />
+                print("Resta:", resultado_resta)
+              </code>
+            </p>
+            <p>También puede ser realizado de la siguiente manera:</p>
+            <p class="code_section">
+              <code>
+                # otro_script.py
+                <br />
+                from mi_paquete.operaciones.suma import mi_suma <br />
+                from mi_paquete.operaciones.resta import mi_resta
+                <br /><br />
+                resultado_suma = mi_suma(5, 3)<br />
+                resultado_resta = mi_resta(10, 4)<br />
+                <br />
+                print("Suma:", resultado_suma)<br />
+                print("Resta:", resultado_resta)
+              </code>
+            </p>
+            <p>
+              Los módulos y paquetes son esenciales para estructurar proyectos
+              más grandes y facilitar la reutilización del código en Python.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Manejo_de_Excepciones">
+          <header>
+            <h2>
+              Manejo de Excepciones
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              El manejo de excepciones en Python se refiere a la práctica de
+              gestionar y responder a situaciones excepcionales o errores
+              durante la ejecución de un programa. Las excepciones son eventos
+              que pueden ocurrir durante la ejecución y que pueden interrumpir
+              el flujo normal del programa si no se manejan adecuadamente. El
+              manejo de excepciones permite a los programadores anticipar y
+              gestionar estas situaciones excepcionales, evitando que el
+              programa se bloquee o produzca resultados incorrectos.
+              <br /><br />
+              En Python, el manejo de excepciones se realiza mediante bloques
+              <strong>try</strong>, <strong>except</strong>,
+              <strong>else</strong> y <strong>finally</strong>. La estructura
+              básica es la siguiente:
+            </p>
+            <p class="code_section">
+              <code>
+                try:<br />
+                &emsp;&emsp;&emsp;&emsp;# Código que puede generar una excepción
+                <br />
+                &emsp;&emsp;&emsp;&emsp;resultado = dividir(10, 0)<br />
+                except ZeroDivisionError:<br />
+                &emsp;&emsp;&emsp;&emsp;# Manejo específico para la excepción
+                ZeroDivisionError<br />
+                &emsp;&emsp;&emsp;&emsp;print("Error: No se puede dividir por
+                cero.")<br />
+                except Exception as e:<br />
+                &emsp;&emsp; &emsp;&emsp;# Manejo genérico para otras
+                excepciones<br />
+                &emsp;&emsp; &emsp;&emsp;print(f"Error inesperado: {e}")<br />
+                else:<br />
+                &emsp;&emsp; &emsp;&emsp;# Se ejecuta si no hay excepciones<br />
+                &emsp;&emsp; &emsp;&emsp;print("La división se realizó con
+                éxito.")<br />
+                finally:<br />
+                &emsp;&emsp; &emsp;&emsp;# Se ejecuta siempre,
+                independientemente de si se produjo una excepción o no<br />
+                &emsp;&emsp; &emsp;&emsp;print("Este bloque se ejecuta
+                siempre.")
+              </code>
+            </p>
+            <p>En este ejemplo se tiene lo siguiente: <br /></p>
+            <ul>
+              <li>
+                El código dentro del bloque <strong>try</strong> es susceptible
+                a lanzar una excepción.
+              </li>
+              <br />
+              <li>
+                Los bloques except especifican cómo manejar excepciones
+                particulares. En este caso, se maneja la excepción
+                <strong>ZeroDivisionError</strong> y, de manera más genérica,
+                <strong>Exception</strong>.
+              </li>
+              <br />
+              <li>
+                El bloque <strong>else</strong> se ejecuta si no se produce
+                ninguna excepción en el bloque <strong>try</strong>.
+              </li>
+              <br />
+              <li>
+                El bloque <strong>finally</strong> se ejecuta siempre,
+                independientemente de si se produjo una excepción o no. Es útil
+                para realizar acciones de limpieza o liberación de recursos.
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Expresiones_Regulares">
+          <header>
+            <h2>
+              Expresiones Regulares
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              Las expresiones regulares (también conocidas como regex o regexp)
+              son patrones de búsqueda de texto que se utilizan para realizar
+              operaciones de búsqueda y manipulación en cadenas de texto. En
+              Python, las expresiones regulares se implementan a través del
+              módulo <code>re</code>, que proporciona funciones para trabajar
+              con estas expresiones.
+              <br />
+              <br />
+              Las expresiones regulares son extremadamente poderosas y
+              flexibles, permitiendo buscar patrones específicos, realizar
+              sustituciones, validar formatos y más.
+            </p>
+            <h3>Sintaxis Básica de Expresiones Regulares en Python:</h3>
+            <ol>
+              <li>
+                <p>
+                  <strong>Raw Strings (cadenas sin procesar): </strong> En
+                  Python, se recomienda utilizar cadenas sin procesar
+                  (precedidas por r) al trabajar con expresiones regulares, ya
+                  que evitan la necesidad de duplicar barras invertidas (\) para
+                  escapar caracteres especiales.
+                </p>
+
+                <p class="code_section">
+                  <code> patron = r"\d{3}-\d{2}-\d{4}" </code>
+                </p>
+              </li>
+              <br />
+              <li>
+                <p><strong>Metacaracteres Comunes:</strong></p>
+                <ul>
+                  <li>
+                    <strong>.</strong>: Coincide con cualquier carácter excepto
+                    una nueva línea.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>^</strong>: Coincide con el inicio de una cadena.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>$</strong>: Coincide con el final de una cadena.
+                  </li>
+                </ul>
+                <br />
+                <p>Este es un ejemplo de uso de <strong>^</strong>:</p>
+                <p class="code_section">
+                  <code>
+                    import re<br />
+                    texto = "Hola, mundo!"<br /><br />
+                    # Buscar la palabra "Hola" al principio de la cadena<br />
+                    resultado = re.search(r"^Hola", texto)
+                  </code>
+                </p>
+              </li>
+              <br />
+              <li>
+                <p><strong>Cuantificadores: </strong></p>
+                <ul>
+                  <li>
+                    <strong>*</strong> : Coincide con 0 o más repeticiones del
+                    carácter anterior.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>+</strong> : Coincide con 1 o más repeticiones del
+                    carácter anterior.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>?</strong> : Coincide con 0 o 1 repetición del
+                    carácter anterior.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>{m,n}</strong> : Coincide con entre m y n
+                    repeticiones del carácter anterior.
+                  </li>
+                </ul>
+              </li>
+              <br />
+              <li>
+                <p><strong>Clases de Caracteres:</strong></p>
+                <ul>
+                  <li>
+                    <strong>[...]</strong> : Coincide con cualquier carácter
+                    dentro de los corchetes.
+                  </li>
+                  <br />
+                  <li>
+                    <strong>[^...]</strong> : Coincide con cualquier carácter
+                    que no esté dentro de los corchetes.
+                  </li>
+                </ul>
+              </li>
+            </ol>
+            <br />
+            <p>
+              Estos son solo algunos ejemplos básicos. Las expresiones regulares
+              pueden volverse bastante complejas y son una herramienta poderosa
+              para la manipulación de cadenas de texto. La biblioteca
+              <code>re</code> en Python proporciona varias funciones, como
+              <code>search</code>, <code>match</code>, <code>findall</code>,
+              <code>sub</code>, entre otras, para trabajar con expresiones
+              regulares.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Manipulacion_de_Archivos">
+          <header>
+            <h2>
+              Manipulación de Archivos
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              La manipulación de archivos en Python se refiere a la capacidad
+              del lenguaje para realizar operaciones de lectura, escritura y
+              manipulación de archivos en el sistema de archivos del sistema
+              operativo. Python posee la función <code>open</code> para
+              interactuar con archivos de texto y binarios.
+            </p>
+            <h3>Ejemplos de Manipulación de Archivos:</h3>
+            <ol>
+              <li>
+                <h4>Lectura de un Archivo de Texto:</h4>
+                <p class="code_section">
+                  <code>
+                    # Abrir un archivo en modo de lectura<br />
+                    with open("archivo.txt", "r") as archivo:<br />
+                    &emsp;&emsp;# Leer todo el contenido del archivo<br />
+                    &emsp;&emsp;contenido = archivo.read()<br />
+                    &emsp;&emsp;print(contenido)<br />
+                    <br />
+                    # O leer línea por línea<br />
+                    archivo.seek(0) # Reiniciar el puntero del archivo al
+                    principio<br />
+                    lineas = archivo.readlines()<br />
+                    for linea in lineas:<br />
+                    &emsp;&emsp;print(linea.strip()) # Eliminar caracteres de
+                    nueva línea al final<br />
+                  </code>
+                </p>
+              </li>
+              <li>
+                <h4>Escritura en un Archivo de Texto:</h4>
+                <p class="code_section">
+                  <code
+                    ># Abrir un archivo en modo de escritura <br />
+                    with open("nuevo_archivo.txt", "w") as archivo:<br />
+                    &emsp;&emsp;# Escribir contenido en el archivo<br />
+                    &emsp;&emsp;archivo.write("Hola, este es un nuevo
+                    archivo.\n")<br />
+                    &emsp;&emsp;archivo.write("Línea 2: Contenido
+                    adicional.")<br
+                  /></code>
+                </p>
+              </li>
+              <li>
+                <h4>Manipulación de Archivos Binarios:</h4>
+                <p class="code_section">
+                  <code>
+                    # Leer y escribir archivos binarios<br />
+                    with open("imagen.jpg", "rb") as archivo_entrada:<br />
+                    &emsp;&emsp;datos_binarios = archivo_entrada.read()<br />
+
+                    &emsp;&emsp;with open("copia_imagen.jpg", "wb") as
+                    archivo_salida:<br />
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;archivo_salida.write(datos_binarios)<br />
+                  </code>
+                </p>
+              </li>
+              <li>
+                <h4>
+                  Uso de la Instrucción <code>with </code> para Garantizar el
+                  Cierre del Archivo:
+                </h4>
+                <p>
+                  La instrucción <code>with </code> asegura que el archivo se
+                  cierre adecuadamente después de que se complete el bloque de
+                  código. Esto es útil para prevenir posibles problemas de
+                  manejo de archivos y para liberar recursos.
+                </p>
+
+                <p class="code_section">
+                  <code
+                    >with open("archivo.txt", "r") as archivo:<br />
+                    &emsp;&emsp;# Realizar operaciones de lectura<br />
+                    &emsp;&emsp;contenido = archivo.read()<br />
+                    &emsp;&emsp;print(contenido)<br />
+                    # El archivo se cerrará automáticamente al salir del bloque
+                    'with'
+                  </code>
+                </p>
+              </li>
+            </ol>
+            <br />
+            <p>
+              Estos son solo ejemplos básicos. Además de los modos de lectura y
+              escritura (<strong>"r"</strong> ,<strong>"w"</strong> ), existen
+              otros modos como <strong>"a"</strong> (para añadir al final del
+              archivo) y <strong> "b"</strong> (para modo binario). También
+              puedes utilizar la biblioteca <code>os</code> para operaciones más
+              avanzadas en archivos y directorios. <br /><br />
+              Recordar manejar excepciones, como FileNotFoundError al abrir
+              archivos, para garantizar la robustez del código.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Trabajo_con_API_REST">
+          <header>
+            <h2>
+              Trabajo con API REST
+              <div class="separador"></div>
+            </h2>
+          </header>
+          <article>
+            <p>
+              El trabajo con API REST en Python implica interactuar con
+              servicios web que siguen los principios de arquitectura REST
+              (Transferencia de Estado Representacional). Las API REST utilizan
+              operaciones HTTP estándar (GET, POST, PUT, DELETE) para realizar
+              acciones sobre recursos, y los datos se suelen enviar y recibir en
+              formato JSON.
+              <br /><br />
+              A continuación, se muestra un ejemplo básico de cómo realizar
+              solicitudes a una API REST utilizando el módulo
+              <strong>requests</strong> en Python.
+            </p>
+            <h3>Ejemplo de Trabajo con API REST:</h3>
+            <p class="code_section">
+              <code>
+                import requests <br />
+                <br />
+                # Ejemplo de una API pública (JSONPlaceholder: Fake Online REST
+                API for Testing and Prototyping)<br />
+                <br />
+                url = "https://jsonplaceholder.typicode.com/posts/1"<br />
+                <br />
+                # Realizar una solicitud GET para obtener un recurso<br />
+                response = requests.get(url)<br />
+                <br />
+                # Verificar si la solicitud fue exitosa (código de estado
+                200)<br />
+                if response.status_code == 200:<br />
+                &emsp;&emsp;# Convertir la respuesta a formato JSON<br />
+                &emsp;&emsp;datos = response.json()<br />
+                &emsp;&emsp;print("Título del post:", datos["title"])<br />
+                else:<br />
+                &emsp;&emsp;print("Error en la
+                solicitud:",response.status_code)<br />
+              </code>
+            </p>
+            <p>En el ejemplo anterior se realiza lo siguiente:</p>
+            <ol>
+              <li>
+                Se utiliza la biblioteca <strong>requests </strong> para
+                realizar una solicitud HTTP GET a la API pública
+                JSONPlaceholder.
+              </li>
+              <br />
+              <li>
+                Se verifica el código de estado de la respuesta. Un código de
+                estado 200 indica que la solicitud fue exitosa.
+              </li>
+              <br />
+              <li>
+                Si la solicitud fue exitosa, se convierten los datos de la
+                respuesta a formato JSON y se imprime el título del post.
+              </li>
+            </ol>
+            <h3>Ejemplo de Envío de Datos con una Solicitud POST:</h3>
+            <p class="code_section">
+              <code>
+                import requests
+                <br />
+                # Ejemplo de una API pública para crear un nuevo recurso
+                <br />
+                url = "https://jsonplaceholder.typicode.com/posts" <br />
+                <br />
+                # Datos a enviar en la solicitud POST<br />
+                datos_nuevo_post = {<br />
+                &emsp;&emsp;"title": "Nuevo Post",<br />
+                &emsp;&emsp;"body": "Contenido del nuevo post",<br />
+                &emsp;&emsp;"userId": 1<br />
+                }<br />
+                <br />
+                # Realizar una solicitud POST para crear un nuevo recurso<br />
+                response = requests.post(url, json=datos_nuevo_post)
+                <br />
+                <br />
+                # Verificar si la solicitud fue exitosa (código de estado 201
+                para creación exitosa)<br />
+                if response.status_code == 201:<br />
+                &emsp;&emsp;nuevo_post = response.json()<br />
+                &emsp;&emsp;print("Nuevo Post creado. ID:",nuevo_post["id"])<br />
+                else:<br />
+                &emsp;&emsp;print("Error en la
+                solicitud:",response.status_code)<br />
+              </code>
+            </p>
+            <p>
+              En este ejemplo, se realiza una solicitud HTTP POST para crear un
+              nuevo post en la API JSONPlaceholder enviando datos en formato
+              JSON.
+              <br /><br />
+              Estos son ejemplos básicos, y trabajar con API REST puede
+              involucrar autenticación, manejo de parámetros, paginación y más,
+              dependiendo de la API específica con la que estés interactuando.
+            </p>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <a
+          class="footer_link_logo"
+          href="https://linktr.ee/waldohidalgo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="./assets/img/logo-waldo.png"
+            alt="Logo Waldo Hidalgo"
+            title="Logo Waldo Hidalgo"
+        /></a>
+        <p>
+          Página Web creada 100% por
+          <span
+            ><a
+              href="https://linktr.ee/waldohidalgo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Waldo Hidalgo Oyarce</a
+            ></span
+          >
+        </p>
+        <div class="contenedor_links">
+          <a
+            href="https://github.com/waldohidalgo"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/img/github-logo.png" alt="Link a mi Github"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/waldo-hidalgo-oyarce/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/img/linkedin-logo.png" alt="Link a mi Linkedin"
+          /></a>
+        </div>
+        <button id="scrollBtn" onclick="scrollToTop()" title="Ir a Inicio">
+          <i class="fa fa-chevron-circle-up"></i>
+        </button>
+      </footer>
+    </div>
+
+    <script src="./assets/js/programming.js"></script>
+  </body>
+</html>

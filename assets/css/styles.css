@@ -1,0 +1,258 @@
+header {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(./Montserrat-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  word-wrap: break-word;
+}
+/*
+Estilo menu hamburguesa
+*/
+.navbar-toggle i {
+  font-size: 2.5rem;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  @media screen and (min-width: 925px) {
+    display: none;
+  }
+}
+.navbar-toggle i:hover {
+  cursor: pointer;
+}
+
+.show_nav_def {
+  height: 0px;
+  transition: height 0.5s ease-out;
+  border: 0px solid black;
+  @media screen and (min-width: 925px) {
+    display: block;
+  }
+}
+
+.show_nav {
+  height: 150px;
+  border: 1px solid black;
+}
+/* 
+Estilo del Scroll Boton
+*/
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+#scrollBtn:hover {
+  background-color: black;
+  border-color: white;
+}
+
+.code_section {
+  background-color: #e7e9eb;
+  padding: 10px;
+  padding-left: 20px;
+  line-height: 2rem;
+  text-align: start;
+  code {
+    font-family: montserrat, monospace;
+  }
+}
+
+code {
+  background-color: #e7e9eb;
+  padding: 2px;
+  font-family: montserrat, monospace;
+}
+
+header {
+  nav {
+    h1 {
+      font-size: 3rem;
+      background-color: #ffff6a;
+      padding-block: 1rem;
+    }
+    h1::before {
+      content: "";
+      background-image: url(../img/icons-python.gif);
+      border-radius: 50%;
+      background-size: contain;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: inline-block;
+    }
+    ul {
+      list-style: none;
+      li {
+        padding-top: 5px;
+        line-height: 3rem;
+        padding-bottom: 5px;
+        font-size: 1.5rem;
+      }
+      li:hover {
+        background-color: #e7e9eb;
+        font-weight: 700;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+#navbar {
+  position: relative;
+
+  @media screen and (min-width: 925px) {
+    position: fixed;
+    width: 400px;
+    height: 80%;
+  }
+
+  ul {
+    overflow-y: auto;
+
+    @media screen and (min-width: 925px) {
+      height: 90%;
+      border: none;
+    }
+  }
+}
+#layout {
+  box-sizing: border-box;
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  @media screen and (min-width: 925px) {
+    position: absolute;
+    left: 400px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+}
+
+h3,
+h4 {
+  padding-block: 1rem;
+}
+h2 {
+  padding-top: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.75rem;
+}
+p {
+  text-align: justify;
+}
+
+.active-list {
+  border-top: 1px solid blue;
+  border-bottom: 1px solid blue;
+  background-color: #e7e9eb;
+  font-weight: 700;
+}
+
+ol ul {
+  list-style-type: square;
+  padding-left: 2rem;
+}
+main ul {
+  padding-left: 1.5rem;
+}
+ol {
+  padding-left: 1rem;
+}
+
+.separador {
+  height: 5px;
+  width: 100%;
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+section p {
+  padding-bottom: 1rem;
+  line-height: 2rem;
+}
+#main-doc {
+  font-size: 1.25rem;
+}
+
+/*
+Estilos del Footer
+*/
+
+footer {
+  background-color: black;
+  padding-top: 1rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  @media screen and (min-width: 925px) {
+    margin-left: 0;
+    margin-right: -5px;
+  }
+}
+footer img[title="Logo Waldo Hidalgo"] {
+  width: 100%;
+}
+
+.footer_link_logo {
+  margin: auto;
+  max-width: 300px;
+  display: block;
+  @media screen and (min-width: 925px) {
+    max-width: 350px;
+  }
+}
+.contenedor_links {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  span {
+    font-style: oblique;
+    a {
+      text-decoration: none;
+      color: yellow;
+    }
+  }
+}
