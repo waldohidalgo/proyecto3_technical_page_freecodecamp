@@ -144,7 +144,6 @@ header {
 
   ul {
     overflow-y: auto;
-
     @media screen and (min-width: 925px) {
       height: 90%;
       border: none;
@@ -161,6 +160,15 @@ header {
     left: 400px;
     padding-left: 10px;
     padding-right: 5px;
+  }
+}
+
+.main-section header {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  @media screen and (min-width: 925px) {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -205,6 +213,10 @@ main ul {
 }
 ol {
   padding-left: 1rem;
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: square;
 }
 
 .separador {
