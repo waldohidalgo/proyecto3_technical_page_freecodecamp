@@ -39,6 +39,9 @@ Estilo menu hamburguesa
 .show_nav_def {
   height: 0px;
   transition: height 0.5s ease-out;
+  -webkit-transition: height 0.5s ease-out;
+  -moz-transition: height 0.5s ease-out;
+  -o-transition: height 0.5s ease-out;
   border: 0px solid black;
   @media screen and (min-width: 925px) {
     display: block;
@@ -53,10 +56,13 @@ Estilo menu hamburguesa
 Estilo del Scroll Boton
 */
 #scrollBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
   background-color: #007bff;
   color: #fff;
   border: 1px solid black;
@@ -66,6 +72,7 @@ Estilo del Scroll Boton
   -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
+
   i {
     font-size: 1.5rem;
   }
