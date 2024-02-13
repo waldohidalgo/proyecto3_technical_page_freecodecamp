@@ -43,15 +43,16 @@ Estilo menu hamburguesa
   -webkit-transition: height 0.5s ease-out;
   -moz-transition: height 0.5s ease-out;
   -o-transition: height 0.5s ease-out;
-  border: 0px solid black;
+
   @media screen and (min-width: 925px) {
     display: block;
+    overflow-y: auto;
   }
 }
 
 .show_nav {
   height: 150px;
-  border: 1px solid black;
+  outline: 1px solid black;
   overflow-y: auto;
 }
 /* 
