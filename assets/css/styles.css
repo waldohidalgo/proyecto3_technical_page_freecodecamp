@@ -38,6 +38,7 @@ Estilo menu hamburguesa
 
 .show_nav_def {
   height: 0px;
+  overflow-y: hidden;
   transition: height 0.5s ease-out;
   -webkit-transition: height 0.5s ease-out;
   -moz-transition: height 0.5s ease-out;
@@ -51,6 +52,7 @@ Estilo menu hamburguesa
 .show_nav {
   height: 150px;
   border: 1px solid black;
+  overflow-y: auto;
 }
 /* 
 Estilo del Scroll Boton
@@ -151,7 +153,6 @@ header {
   }
 
   ul {
-    overflow-y: auto;
     @media screen and (min-width: 925px) {
       height: 90%;
       border: none;
