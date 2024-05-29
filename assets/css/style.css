@@ -89,6 +89,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -103,17 +104,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -121,6 +126,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -134,10 +140,10 @@ a {
 /*
 Fin de reset
 */
-
 header {
   text-align: center;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 12px;
@@ -147,13 +153,13 @@ html {
   font-family: montserrat;
   src: url(./Montserrat-VariableFont_wght.ttf) format("truetype");
 }
-
 * {
   margin: 0;
   padding: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   word-wrap: break-word;
 }
+
 /*
 Estilo menu hamburguesa
 */
@@ -164,11 +170,13 @@ Estilo menu hamburguesa
   border-radius: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;
-
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  .navbar-toggle i {
     display: none;
   }
 }
+
 .navbar-toggle i:hover {
   cursor: pointer;
 }
@@ -180,8 +188,9 @@ Estilo menu hamburguesa
   -webkit-transition: height 0.5s ease-out;
   -moz-transition: height 0.5s ease-out;
   -o-transition: height 0.5s ease-out;
-
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  .show_nav_def {
     display: block;
     overflow-y: auto;
   }
@@ -192,6 +201,7 @@ Estilo menu hamburguesa
   outline: 1px solid black;
   overflow-y: auto;
 }
+
 /* 
 Estilo del Scroll Boton
 */
@@ -210,13 +220,10 @@ Estilo del Scroll Boton
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
-  -webkit-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.75);
-
-  i {
-    font-size: 1.5rem;
-  }
+}
+#scrollBtn i {
+  font-size: 1.5rem;
 }
 
 #scrollBtn:hover {
@@ -230,11 +237,13 @@ Estilo del Scroll Boton
   padding-left: 20px;
   line-height: 2rem;
   text-align: start;
-  code {
-    font-family: montserrat, monospace;
-  }
   font-size: 0.8rem;
-  @media screen and (min-width: 925px) {
+}
+.code_section code {
+  font-family: montserrat, monospace;
+}
+@media screen and (min-width: 925px) {
+  .code_section {
     font-size: 1rem;
   }
 }
@@ -247,62 +256,65 @@ code {
 
 nav {
   text-align: center;
-  h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    background-color: #ffff6a;
-    padding-block: 1rem;
-  }
-  h1::before {
-    content: "";
-    background-image: url(../img/icons-python.gif);
-    border-radius: 50%;
-    background-size: contain;
-    width: 2.5rem;
-    height: 2.5rem;
-    display: inline-block;
-  }
-  ul {
-    list-style: none;
-    li {
-      padding-top: 5px;
-      line-height: 3rem;
-      padding-bottom: 5px;
-      font-size: 1.5rem;
-    }
-    li:hover {
-      background-color: #e7e9eb;
-      font-weight: 700;
-    }
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
+}
+nav h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  background-color: #ffff6a;
+  padding-block: 1rem;
+}
+nav h1::before {
+  content: "";
+  background-image: url(../img/icons-python.gif);
+  border-radius: 50%;
+  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  padding-top: 5px;
+  line-height: 3rem;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+}
+nav ul li:hover {
+  background-color: #e7e9eb;
+  font-weight: 700;
+}
+nav a {
+  text-decoration: none;
+  color: black;
 }
 
 #navbar {
   position: relative;
-
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  #navbar {
     position: fixed;
     width: 400px;
     height: 80%;
   }
-
-  ul {
-    @media screen and (min-width: 925px) {
-      height: 90%;
-      border: none;
-    }
+}
+@media screen and (min-width: 925px) {
+  #navbar ul {
+    height: 90%;
+    border: none;
   }
 }
+
 #layout {
   box-sizing: border-box;
   position: relative;
   padding-right: 1rem;
   padding-left: 1rem;
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  #layout {
     position: absolute;
     left: 400px;
     padding-left: 10px;
@@ -313,7 +325,9 @@ nav {
 .main-section header {
   margin-left: -1rem;
   margin-right: -1rem;
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  .main-section header {
     margin-right: 0;
     margin-left: 0;
   }
@@ -323,8 +337,10 @@ h3,
 h4 {
   padding-block: 1rem;
 }
+
 h2 {
   padding-top: 1rem;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
@@ -336,10 +352,12 @@ h3 {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 h4 {
   font-weight: bold;
   font-weight: 1.25rem;
 }
+
 p {
   text-align: justify;
 }
@@ -355,13 +373,16 @@ ol ul {
   list-style-type: square;
   padding-left: 2rem;
 }
+
 main ul {
   padding-left: 1.5rem;
 }
+
 ol {
   padding-left: 1rem;
   list-style-type: decimal;
 }
+
 ul {
   list-style-type: square;
 }
@@ -374,10 +395,12 @@ ul {
   margin-right: auto;
   margin-bottom: 1rem;
 }
+
 section p {
   padding-bottom: 1rem;
   line-height: 2rem;
 }
+
 #main-doc {
   font-size: 1.25rem;
 }
@@ -385,17 +408,19 @@ section p {
 /*
 Estilos del Footer
 */
-
 footer {
   background-color: black;
   padding-top: 1rem;
   margin-left: -1rem;
   margin-right: -1rem;
-  @media screen and (min-width: 925px) {
+}
+@media screen and (min-width: 925px) {
+  footer {
     margin-left: 0;
     margin-right: -5px;
   }
 }
+
 footer img[title="Logo Waldo Hidalgo"] {
   width: 100%;
 }
@@ -417,7 +442,8 @@ footer img[title="Logo Waldo Hidalgo"] {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 footer p {
@@ -426,11 +452,11 @@ footer p {
   font-size: 1.5rem;
   font-family: montserrat, sans-serif;
   font-weight: 700;
-  span {
-    font-style: oblique;
-    a {
-      text-decoration: none;
-      color: yellow;
-    }
-  }
 }
+footer p span {
+  font-style: oblique;
+}
+footer p span a {
+  text-decoration: none;
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */

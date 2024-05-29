@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="description" content="Python Tutorial" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <link
       rel="shortcut icon"
       href="./assets/img/python-logo.png"
@@ -19,76 +19,75 @@
     <title>Python Tutorial</title>
   </head>
   <body>
-    <header>
-      <nav id="navbar">
+    <nav id="navbar">
+      <header>
         <h1>Python Tutorial</h1>
-        <div class="navbar-toggle" onclick="toggleNavbar()">
-          <i class="fa fa-bars"></i>
-        </div>
-        <ul class="show_nav_def">
-          <li title="Ir a sección Introducción">
-            <a href="#Introduccion" class="nav-link">Introducción</a>
-          </li>
-          <li title="Ir a sección Variables y Operadores">
-            <a href="#Variables_y_Operadores" class="nav-link"
-              >Variables y Operadores</a
-            >
-          </li>
-          <li title="Ir a sección Estructuras de Datos">
-            <a href="#Estructuras_de_Datos" class="nav-link"
-              >Estructuras de Datos</a
-            >
-          </li>
-          <li title="Ir a sección Control de Flujo">
-            <a href="#Control_de_Flujo" class="nav-link">Control de Flujo</a>
-          </li>
-          <li title="Ir a sección Funciones">
-            <a href="#Funciones" class="nav-link">Funciones</a>
-          </li>
-          <li title="Ir a sección Programación Orientada a Objetos">
-            <a href="#Programacion_Orientada_a_Objetos_(POO)" class="nav-link"
-              >Programación Orientada a Objetos</a
-            >
-          </li>
-          <li title="Ir a sección Decoradores">
-            <a href="#Decoradores" class="nav-link">Decoradores</a>
-          </li>
-          <li title="Ir a sección Iteradores y Generadores">
-            <a href="#Iteradores_y_Generadores" class="nav-link"
-              >Iteradores y Generadores</a
-            >
-          </li>
-          <li title="Ir a sección Módules y Paquetes">
-            <a href="#Modulos_y_Paquetes" class="nav-link"
-              >Módulos y Paquetes</a
-            >
-          </li>
-          <li title="Ir a sección Manejo de Excepciones">
-            <a href="#Manejo_de_Excepciones" class="nav-link"
-              >Manejo de Excepciones</a
-            >
-          </li>
-          <li title="Ir a sección Expresiones Regulares">
-            <a href="#Expresiones_Regulares" class="nav-link"
-              >Expresiones Regulares</a
-            >
-          </li>
-          <li title="Ir a sección Manipulación de Archivos">
-            <a href="#Manipulacion_de_Archivos" class="nav-link"
-              >Manipulación de Archivos</a
-            >
-          </li>
-          <li title="Ir a sección Trabajo Con API Rest">
-            <a href="#Trabajo_con_API_REST" class="nav-link"
-              >Trabajo con API REST</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </header>
+      <div class="navbar-toggle" onclick="toggleNavbar()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="show_nav_def">
+        <li title="Ir a sección Introducción">
+          <a href="#Introducción" class="nav-link">Introducción</a>
+        </li>
+        <li title="Ir a sección Variables y Operadores">
+          <a href="#Variables_y_Operadores" class="nav-link"
+            >Variables y Operadores</a
+          >
+        </li>
+        <li title="Ir a sección Estructuras de Datos">
+          <a href="#Estructuras_de_Datos" class="nav-link"
+            >Estructuras de Datos</a
+          >
+        </li>
+        <li title="Ir a sección Control de Flujo">
+          <a href="#Control_de_Flujo" class="nav-link">Control de Flujo</a>
+        </li>
+        <li title="Ir a sección Funciones">
+          <a href="#Funciones" class="nav-link">Funciones</a>
+        </li>
+        <li title="Ir a sección Programación Orientada a Objetos">
+          <a href="#Programación_Orientada_a_Objetos_(POO)" class="nav-link"
+            >Programación Orientada a Objetos (POO)</a
+          >
+        </li>
+        <li title="Ir a sección Decoradores">
+          <a href="#Decoradores" class="nav-link">Decoradores</a>
+        </li>
+        <li title="Ir a sección Iteradores y Generadores">
+          <a href="#Iteradores_y_Generadores" class="nav-link"
+            >Iteradores y Generadores</a
+          >
+        </li>
+        <li title="Ir a sección Módules y Paquetes">
+          <a href="#Módulos_y_Paquetes" class="nav-link">Módulos y Paquetes</a>
+        </li>
+        <li title="Ir a sección Manejo de Excepciones">
+          <a href="#Manejo_de_Excepciones" class="nav-link"
+            >Manejo de Excepciones</a
+          >
+        </li>
+        <li title="Ir a sección Expresiones Regulares">
+          <a href="#Expresiones_Regulares" class="nav-link"
+            >Expresiones Regulares</a
+          >
+        </li>
+        <li title="Ir a sección Manipulación de Archivos">
+          <a href="#Manipulación_de_Archivos" class="nav-link"
+            >Manipulación de Archivos</a
+          >
+        </li>
+        <li title="Ir a sección Trabajo Con API Rest">
+          <a href="#Trabajo_con_API_REST" class="nav-link"
+            >Trabajo con API REST</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <div id="layout">
       <main id="main-doc">
-        <section class="main-section" id="Introduccion">
+        <section class="main-section" id="Introducción">
           <header>
             <h2>
               Introducción
@@ -337,7 +336,7 @@
         </section>
         <section
           class="main-section"
-          id="Programacion_Orientada_a_Objetos_(POO)"
+          id="Programación_Orientada_a_Objetos_(POO)"
         >
           <header>
             <h2>
@@ -518,7 +517,7 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Modulos_y_Paquetes">
+        <section class="main-section" id="Módulos_y_Paquetes">
           <header>
             <h2>
               Módulos y Paquetes
@@ -827,7 +826,7 @@
             </p>
           </article>
         </section>
-        <section class="main-section" id="Manipulacion_de_Archivos">
+        <section class="main-section" id="Manipulación_de_Archivos">
           <header>
             <h2>
               Manipulación de Archivos
@@ -1076,7 +1075,7 @@
         </div>
       </footer>
     </div>
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="./assets/js/programming.js"></script>
   </body>
 </html>
